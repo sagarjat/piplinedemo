@@ -5,6 +5,7 @@ pipeline {
         stage('commit') {
             steps {
                 echo 'code commited'
+                git branch: 'main', url: 'https://github.com/sagarjat/piplinedemo.git'
             }
         }
          stage('build') {
