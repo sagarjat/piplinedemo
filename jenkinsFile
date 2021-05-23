@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('commit') {
+            steps {
+                echo 'code commited'
+            }
+        }
+         stage('build') {
+            steps {
+                echo 'build successfully'
+            }
+        }
+         stage('test') {
+            steps {
+                echo 'testing done'
+            }
+        }
+        stage('production') {
+            steps {
+                echo 'send on production'
+            }
+        }
+    }
+}
